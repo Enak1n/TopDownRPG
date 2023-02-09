@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     {
         if (canMove)
         {
-            //  ≈сли не равно 0, попытка движени€
+
             if (movementInput != Vector2.zero)
             {
                 bool success = TryMove(movementInput);
@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isMoving", false);
             }
 
-            // ”становить направлени€ спрайта в зависимости от движени€
+
             if (movementInput.x < 0)
             {
                 spriteRenderer.flipX = true;
